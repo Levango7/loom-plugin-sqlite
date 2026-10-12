@@ -11,3 +11,6 @@ __pycache__/
 build/
 dist/
 .venv/
+versions/
+bus_data/
+logs/
