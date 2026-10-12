@@ -1,0 +1,13 @@
+# 生成物（make_sample.py / 运行产物）
+sample.db
+output/
+backups/
+checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
