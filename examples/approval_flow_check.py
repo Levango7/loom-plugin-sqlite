@@ -18,8 +18,13 @@ from pathlib import Path
 # 本地（未安装）运行支持：把仓根加入搜索路径；安装态下这是 no-op。
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from loom_core import PipelineOrchestrator, paths
-from loom_core.scheduler import Scheduler
+# 双名兼容（宿主 3.11.0 起 pipeline_core → loom_core；shim 保旧名到 4.x）
+try:  # pragma: no cover - 分支取决于宿主版本
+    from loom_core import PipelineOrchestrator, paths
+    from loom_core.scheduler import Scheduler
+except ModuleNotFoundError:  # 宿主 < 3.11.0
+    from pipeline_core import PipelineOrchestrator, paths
+    from pipeline_core.scheduler import Scheduler
 
 ROOT = Path(__file__).resolve().parent.parent
 PIPELINE = ROOT / "examples" / "sqlite-report-approved.yaml"

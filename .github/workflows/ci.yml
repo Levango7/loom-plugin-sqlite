@@ -15,7 +15,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10", "3.12"]
+        python-version: ["3.12"]
+        # 宿主 import 名改名（pipeline_core → loom_core，3.11.0 起）的
+        # 双路径兼容：旧版走旧名、新版走新名，插件两个都要能跑。
+        nexusloom-version: ["3.10.0", "3.11.0"]
 
     steps:
       - uses: actions/checkout@v4
@@ -27,7 +30,7 @@ jobs:
       - name: 装宿主（PyPI 正式版）与本插件
         run: |
           python -m pip install --upgrade pip
-          pip install "nexusloom==3.10.0"
+          pip install "nexusloom==${{ matrix.nexusloom-version }}"
           pip install .
 
       - name: 零改动集成——插件被发现且带来源标记

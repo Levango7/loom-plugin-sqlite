@@ -21,10 +21,16 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
-# 接入契约：group = loom.agents；值是**模块路径**（与内置 agents/*.py 同构：
-# 模块级 AGENT_NAME + BaseAgent 子类）。
-# 旧 group 名 doc_pipeline.agents 在宿主过渡期仍被发现，但新包一律用新名。
+# 接入契约：值是**模块路径**（与内置 agents/*.py 同构：模块级 AGENT_NAME +
+# BaseAgent 子类）。**双组声明**覆盖宿主过渡期：
+#   - loom.agents（3.11.0 起的新契约）；
+#   - doc_pipeline.agents（3.10.x 只认旧组；3.11+ 双读旧组、同名新组优先，
+#     不会重复注册）。
+# 宿主侧去重按注册名，两个组写同一模块是安全的。
 [project.entry-points."loom.agents"]
+sqlite_query = "loom_plugin_sqlite.sqlite_query"
+
+[project.entry-points."doc_pipeline.agents"]
 sqlite_query = "loom_plugin_sqlite.sqlite_query"
 
 [project.urls]

@@ -12,3 +12,44 @@
 [2026-10-12 22:58:43] [agent.fetcher] DEBUG: Agent 快照
 [2026-10-12 22:58:46] [agent.fetcher] DEBUG: Agent 快照
 [2026-10-12 22:58:47] [agent.fetcher] INFO: Agent 停止
+[2026-10-12 23:25:03] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 23:25:03] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\doc_pipeline_fetcher | Async I/O: 启用 | HTML解析: lexbor | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 23:25:09] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:25:09] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:25:10] [agent.fetcher] INFO: Agent 停止
+[2026-10-12 23:27:06] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 23:27:06] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\doc_pipeline_fetcher | Async I/O: 启用 | HTML解析: lexbor | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 23:27:07] [agent.fetcher] INFO: Agent 停止
+[2026-10-12 23:28:20] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 23:28:20] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\doc_pipeline_fetcher | Async I/O: 启用 | HTML解析: lexbor | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 23:28:22] [agent.fetcher] INFO: Agent 停止
+[2026-10-12 23:30:39] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 23:30:39] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\doc_pipeline_fetcher | Async I/O: 启用 | HTML解析: lexbor | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 23:30:40] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:30:40] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:30:41] [agent.fetcher] INFO: Agent 停止
+[2026-10-12 23:31:28] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 23:31:28] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\doc_pipeline_fetcher | Async I/O: 启用 | HTML解析: lexbor | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 23:31:29] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:31:29] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:31:29] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:31:30] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:31:30] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:31:30] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:31:30] [agent.fetcher] INFO: Agent 停止
+[2026-10-12 23:33:28] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 23:33:28] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\loom_fetcher | Async I/O: 启用 | HTML解析: lexbor | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 23:34:11] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 23:34:11] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\loom_fetcher | Async I/O: 启用 | HTML解析: lexbor | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 23:34:12] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:34:12] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:34:13] [agent.fetcher] INFO: Agent 停止
+[2026-10-12 23:34:15] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 23:34:15] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\loom_fetcher | Async I/O: 启用 | HTML解析: lexbor | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 23:34:17] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:34:17] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:34:17] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:34:18] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:34:19] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:34:19] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 23:34:19] [agent.fetcher] INFO: Agent 停止

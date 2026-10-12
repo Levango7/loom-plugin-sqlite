@@ -12,3 +12,44 @@
 [2026-10-12 22:58:43] [agent.researcher] DEBUG: Agent 快照
 [2026-10-12 22:58:46] [agent.researcher] DEBUG: Agent 快照
 [2026-10-12 22:58:47] [agent.researcher] INFO: Agent 停止
+[2026-10-12 23:25:04] [agent.researcher] INFO: Agent researcher v2.0 初始化完成
+[2026-10-12 23:25:04] [agent.researcher] INFO: Researcher v2.0 初始化完成 (engines=['bing', 'sogou', '360'])
+[2026-10-12 23:25:09] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:25:09] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:25:10] [agent.researcher] INFO: Agent 停止
+[2026-10-12 23:27:07] [agent.researcher] INFO: Agent researcher v2.0 初始化完成
+[2026-10-12 23:27:07] [agent.researcher] INFO: Researcher v2.0 初始化完成 (engines=['bing', 'sogou', '360'])
+[2026-10-12 23:27:07] [agent.researcher] INFO: Agent 停止
+[2026-10-12 23:28:21] [agent.researcher] INFO: Agent researcher v2.0 初始化完成
+[2026-10-12 23:28:21] [agent.researcher] INFO: Researcher v2.0 初始化完成 (engines=['bing', 'sogou', '360'])
+[2026-10-12 23:28:22] [agent.researcher] INFO: Agent 停止
+[2026-10-12 23:30:39] [agent.researcher] INFO: Agent researcher v2.0 初始化完成
+[2026-10-12 23:30:39] [agent.researcher] INFO: Researcher v2.0 初始化完成 (engines=['bing', 'sogou', '360'])
+[2026-10-12 23:30:40] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:30:40] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:30:41] [agent.researcher] INFO: Agent 停止
+[2026-10-12 23:31:28] [agent.researcher] INFO: Agent researcher v2.0 初始化完成
+[2026-10-12 23:31:28] [agent.researcher] INFO: Researcher v2.0 初始化完成 (engines=['bing', 'sogou', '360'])
+[2026-10-12 23:31:29] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:31:29] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:31:29] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:31:30] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:31:30] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:31:30] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:31:30] [agent.researcher] INFO: Agent 停止
+[2026-10-12 23:33:29] [agent.researcher] INFO: Agent researcher v2.0 初始化完成
+[2026-10-12 23:33:29] [agent.researcher] INFO: Researcher v2.0 初始化完成 (engines=['bing', 'sogou', '360'])
+[2026-10-12 23:34:11] [agent.researcher] INFO: Agent researcher v2.0 初始化完成
+[2026-10-12 23:34:11] [agent.researcher] INFO: Researcher v2.0 初始化完成 (engines=['bing', 'sogou', '360'])
+[2026-10-12 23:34:12] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:34:12] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:34:13] [agent.researcher] INFO: Agent 停止
+[2026-10-12 23:34:15] [agent.researcher] INFO: Agent researcher v2.0 初始化完成
+[2026-10-12 23:34:15] [agent.researcher] INFO: Researcher v2.0 初始化完成 (engines=['bing', 'sogou', '360'])
+[2026-10-12 23:34:17] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:34:17] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:34:17] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:34:18] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:34:19] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:34:19] [agent.researcher] DEBUG: Agent 快照
+[2026-10-12 23:34:19] [agent.researcher] INFO: Agent 停止

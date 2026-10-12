@@ -1,0 +1,26 @@
+[
+  {
+    "version": 1,
+    "file_path": "F:\\tmp\\loom-plugin-sqlite\\output\\sqlite-report.md",
+    "content_path": "versions\\082bdba520c98011\\v1.md",
+    "sha256": "d50be971d550d89025b77bc42664a7b0f920485ebf55012ce09b7fe44c1fe50d",
+    "size": 1040,
+    "lines": 14,
+    "created_at": 1791819040.7480705,
+    "task_id": "82266ad277564c0e",
+    "quality_score": 0.0,
+    "message": "SafeWriter 自动提交 (reason=plugin)"
+  },
+  {
+    "version": 2,
+    "file_path": "F:\\tmp\\loom-plugin-sqlite\\output\\sqlite-report.md",
+    "content_path": "versions\\082bdba520c98011\\v2.md",
+    "sha256": "d50be971d550d89025b77bc42664a7b0f920485ebf55012ce09b7fe44c1fe50d",
+    "size": 1040,
+    "lines": 14,
+    "created_at": 1791819252.5018384,
+    "task_id": "0e53844f21b4499e",
+    "quality_score": 0.0,
+    "message": "SafeWriter 自动提交 (reason=plugin)"
+  }
+]

@@ -70,8 +70,22 @@ agents:
 
 - entry point：组 `loom.agents`，值 = 模块路径（`包.模块`）；
 - 模块级 `AGENT_NAME`（注册名，管线里写它）+ `AGENT_VERSION` + 可选 `AGENT_DESC`/`INPUT_TOPICS`/`OUTPUT_TOPICS`；
-- 一个 `loom_core.base_agent.BaseAgent` 子类，实现 `handle(msg) -> dict`；返回 dict 里的 `content` 等字段按宿主产物契约流向下游；
-- 只依赖宿主公开面（`loom_core.base_agent`），不要 import 宿主内部模块。
+- **产物契约**：`PRODUCES = {"content": "last", ...}` 声明哪些键提升给下游（落盘/质检节点按 `CONSUMES=["content"]` 取正文）；不声明的键只能经 `dependencies_results` 访问；
+- 一个 `loom_core.base_agent.BaseAgent` 子类，实现 `handle(msg) -> dict`；
+- 只依赖宿主公开面（如 `base_agent`），不要 import 宿主内部模块。
+
+### 过渡期提示：宿主 import 改名（3.11.0 起）
+
+宿主引擎的 import 根名已从 `pipeline_core` 改为 `loom_core`（旧名以兼容 shim 保留，identity 保真，到 4.x）。**同时支持新旧宿主的插件**照这个写：
+
+```python
+try:  # 宿主 >= 3.11.0
+    from loom_core.base_agent import BaseAgent, Message
+except ModuleNotFoundError:  # 宿主 3.10.x
+    from pipeline_core.base_agent import BaseAgent, Message
+```
+
+本插件的 CI 就是双宿主版本矩阵（3.10.0 与 3.11.0 各跑一遍全链），可直接抄。
 
 ## License
 

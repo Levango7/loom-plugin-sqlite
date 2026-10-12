@@ -13,8 +13,7 @@ from pathlib import Path
 # 本地（未安装）运行支持：把仓根加入搜索路径；安装态下这是 no-op。
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from loom_core.base_agent import Message
-from loom_plugin_sqlite.sqlite_query import SqliteQueryAgent
+from loom_plugin_sqlite.sqlite_query import Message, SqliteQueryAgent
 
 PASS, FAIL = "PASS", "FAIL"
 results: list[tuple[str, bool, str]] = []

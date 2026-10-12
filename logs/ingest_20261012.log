@@ -4,3 +4,26 @@
 [2026-10-12 22:58:37] [agent.ingest] INFO: Agent ingest v1.0 初始化完成
 [2026-10-12 22:58:37] [agent.ingest] INFO: Ingest v1.0 初始化完成（数字版后端: pymupdf；OCR 按需探测）
 [2026-10-12 22:58:47] [agent.ingest] INFO: Agent 停止
+[2026-10-12 23:25:03] [agent.ingest] INFO: Agent ingest v1.0 初始化完成
+[2026-10-12 23:25:03] [agent.ingest] INFO: Ingest v1.0 初始化完成（数字版后端: pymupdf 缺失；OCR 按需探测）
+[2026-10-12 23:25:10] [agent.ingest] INFO: Agent 停止
+[2026-10-12 23:27:06] [agent.ingest] INFO: Agent ingest v1.0 初始化完成
+[2026-10-12 23:27:06] [agent.ingest] INFO: Ingest v1.0 初始化完成（数字版后端: pymupdf 缺失；OCR 按需探测）
+[2026-10-12 23:27:07] [agent.ingest] INFO: Agent 停止
+[2026-10-12 23:28:21] [agent.ingest] INFO: Agent ingest v1.0 初始化完成
+[2026-10-12 23:28:21] [agent.ingest] INFO: Ingest v1.0 初始化完成（数字版后端: pymupdf 缺失；OCR 按需探测）
+[2026-10-12 23:28:22] [agent.ingest] INFO: Agent 停止
+[2026-10-12 23:30:39] [agent.ingest] INFO: Agent ingest v1.0 初始化完成
+[2026-10-12 23:30:39] [agent.ingest] INFO: Ingest v1.0 初始化完成（数字版后端: pymupdf 缺失；OCR 按需探测）
+[2026-10-12 23:30:41] [agent.ingest] INFO: Agent 停止
+[2026-10-12 23:31:28] [agent.ingest] INFO: Agent ingest v1.0 初始化完成
+[2026-10-12 23:31:28] [agent.ingest] INFO: Ingest v1.0 初始化完成（数字版后端: pymupdf 缺失；OCR 按需探测）
+[2026-10-12 23:31:30] [agent.ingest] INFO: Agent 停止
+[2026-10-12 23:33:28] [agent.ingest] INFO: Agent ingest v1.0 初始化完成
+[2026-10-12 23:33:28] [agent.ingest] INFO: Ingest v1.0 初始化完成（数字版后端: pymupdf 缺失；OCR 按需探测）
+[2026-10-12 23:34:11] [agent.ingest] INFO: Agent ingest v1.0 初始化完成
+[2026-10-12 23:34:11] [agent.ingest] INFO: Ingest v1.0 初始化完成（数字版后端: pymupdf 缺失；OCR 按需探测）
+[2026-10-12 23:34:13] [agent.ingest] INFO: Agent 停止
+[2026-10-12 23:34:15] [agent.ingest] INFO: Agent ingest v1.0 初始化完成
+[2026-10-12 23:34:15] [agent.ingest] INFO: Ingest v1.0 初始化完成（数字版后端: pymupdf 缺失；OCR 按需探测）
+[2026-10-12 23:34:19] [agent.ingest] INFO: Agent 停止

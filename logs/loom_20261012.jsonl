@@ -83,3 +83,201 @@
 {"timestamp": "2026-10-12T22:58:44.799547", "level": "WARNING", "message": "Node safe_writer 失败，1.9s 后重试 (尝试 3/3)", "app": "loom", "task_id": "dbg2", "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点"}
 {"timestamp": "2026-10-12T22:58:46.694968", "level": "ERROR", "message": "交付契约未满足：没有交付物，不能算 done", "app": "loom", "task_id": "dbg2", "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。；声明了落盘节点却没有交付物（无 output_path/内容）"}
 {"timestamp": "2026-10-12T22:58:46.714108", "level": "INFO", "message": "Pipeline failed", "app": "loom", "task_id": "dbg2", "pipeline": "sqlite-report-approved", "status": "failed", "duration_sec": 7.12, "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。；声明了落盘节点却没有交付物（无 output_path/内容）", "steps": 3}
+{"timestamp": "2026-10-12T23:25:03.444066", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:03.554875", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:03.661313", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:03.809363", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:03.924825", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:04.080428", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:04.211190", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:04.325634", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:04.446234", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:04.569060", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:04.718929", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:04.845863", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:04.993073", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:05.120154", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:05.234844", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:05.370878", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:05.488714", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:05.729929", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:05.960326", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:25:06.225677", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "68234f0632c8426b", "pipeline": "sqlite-report", "input_file": "examples/input.md", "plan_id": "b6619967", "total_nodes": 2}
+{"timestamp": "2026-10-12T23:25:06.242468", "level": "WARNING", "message": "Node sqlite_query 失败，1.0s 后重试 (尝试 2/3)", "app": "loom", "task_id": "68234f0632c8426b", "error": "节点 sqlite_query 业务失败: Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T23:25:07.213831", "level": "WARNING", "message": "Node sqlite_query 失败，2.4s 后重试 (尝试 3/3)", "app": "loom", "task_id": "68234f0632c8426b", "error": "Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T23:25:09.626558", "level": "WARNING", "message": "Node safe_writer 跳过（依赖未成功: sqlite_query）", "app": "loom", "task_id": "68234f0632c8426b"}
+{"timestamp": "2026-10-12T23:25:09.634365", "level": "ERROR", "message": "交付契约未满足：没有交付物，不能算 done", "app": "loom", "task_id": "68234f0632c8426b", "error": "Agent sqlite_query 未找到；声明了落盘节点却没有交付物（无 output_path/内容）"}
+{"timestamp": "2026-10-12T23:25:09.637321", "level": "INFO", "message": "Pipeline failed", "app": "loom", "task_id": "68234f0632c8426b", "pipeline": "sqlite-report", "status": "failed", "duration_sec": 3.41, "error": "Agent sqlite_query 未找到；声明了落盘节点却没有交付物（无 output_path/内容）", "steps": 1}
+{"timestamp": "2026-10-12T23:27:06.053555", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:06.564543", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:06.756307", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:06.806326", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:06.843041", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:06.889397", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:06.926405", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:06.973650", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.018542", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.060236", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.109201", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.152798", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.192033", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.234133", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.282855", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.317348", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.352764", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.435615", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:27:07.536435", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:20.167233", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:20.822792", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.026112", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.077775", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.120348", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.176378", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.214303", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.257639", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.307211", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.348586", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.406312", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.473559", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.527600", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.598089", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.648538", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.693106", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.732116", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.822416", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:28:21.924555", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.434842", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.522906", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.580156", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.634398", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.679445", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.727251", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.775387", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.825387", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.866023", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.909762", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:39.973405", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.030062", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.084861", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.125315", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.174362", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.213114", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.269667", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.370730", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.487134", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.540797", "level": "INFO", "message": "注册: sqlite_query v0.1.0（entry_point:sqlite_query）", "app": "loom"}
+{"timestamp": "2026-10-12T23:30:40.647003", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "82266ad277564c0e", "pipeline": "sqlite-report", "input_file": "examples/input.md", "plan_id": "286b7f7f", "total_nodes": 2}
+{"timestamp": "2026-10-12T23:30:40.704536", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "sqlite_query"}
+{"timestamp": "2026-10-12T23:30:40.751514", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "safe_writer"}
+{"timestamp": "2026-10-12T23:30:40.766310", "level": "INFO", "message": "Pipeline done", "app": "loom", "task_id": "82266ad277564c0e", "pipeline": "sqlite-report", "status": "done", "duration_sec": 0.12, "error": "", "steps": 2}
+{"timestamp": "2026-10-12T23:31:28.045091", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.472218", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.616527", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.665444", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.697528", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.735639", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.770641", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.804468", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.848715", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.883982", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.926944", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:28.966077", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:29.000903", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:29.038348", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:29.078461", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:29.117117", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:29.152843", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:29.243919", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:29.347172", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:29.394352", "level": "INFO", "message": "注册: sqlite_query v0.1.0（entry_point:sqlite_query）", "app": "loom"}
+{"timestamp": "2026-10-12T23:31:29.401001", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "input_file": "F:\\tmp\\loom-plugin-sqlite\\examples\\input.md", "plan_id": "663ccef6", "total_nodes": 3}
+{"timestamp": "2026-10-12T23:31:29.434355", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "sqlite_query"}
+{"timestamp": "2026-10-12T23:31:29.453683", "level": "INFO", "message": "审批闸门等待人工放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T23:31:29.609821", "level": "INFO", "message": "审批放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T23:31:29.962431", "level": "INFO", "message": "审批闸门 release_gate 已放行", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T23:31:30.009656", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "safe_writer"}
+{"timestamp": "2026-10-12T23:31:30.036376", "level": "INFO", "message": "Pipeline done", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "status": "done", "duration_sec": 0.62, "error": "", "steps": 3}
+{"timestamp": "2026-10-12T23:31:30.223905", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "ext_reject", "pipeline": "sqlite-report-approved", "input_file": "F:\\tmp\\loom-plugin-sqlite\\examples\\input.md", "plan_id": "663ccef6", "total_nodes": 3}
+{"timestamp": "2026-10-12T23:31:30.236675", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "sqlite_query"}
+{"timestamp": "2026-10-12T23:31:30.255902", "level": "INFO", "message": "审批闸门等待人工放行：['release_gate']", "app": "loom", "task_id": "ext_reject"}
+{"timestamp": "2026-10-12T23:31:30.424978", "level": "WARNING", "message": "审批驳回：['release_gate'] —— 演示驳回", "app": "loom", "task_id": "ext_reject"}
+{"timestamp": "2026-10-12T23:31:30.437582", "level": "INFO", "message": "Pipeline cancelled", "app": "loom", "task_id": "ext_reject", "pipeline": "sqlite-report-approved", "status": "cancelled", "duration_sec": 0.2, "error": "审批被驳回: 演示驳回", "steps": 1}
+{"timestamp": "2026-10-12T23:33:28.780437", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:28.867520", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:28.925085", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:28.975711", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.048057", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.117550", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.197787", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.270466", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.364698", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.441170", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.517438", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.589542", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.653569", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.701826", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.739750", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.790877", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.830022", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:29.934407", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:30.030649", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:33:30.082579", "level": "INFO", "message": "注册: sqlite_query v0.1.0（entry_point:sqlite_query）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.421727", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.482007", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.524027", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.563555", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.601452", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.651602", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.695847", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.735738", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.781659", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.823911", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.877371", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.920729", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:11.964529", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:12.004699", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:12.041653", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:12.079077", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:12.117919", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:12.208311", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:12.296516", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:12.336018", "level": "INFO", "message": "注册: sqlite_query v0.1.0（entry_point:sqlite_query）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:12.416260", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "0e53844f21b4499e", "pipeline": "sqlite-report", "input_file": "examples/input.md", "plan_id": "c5aaa3f7", "total_nodes": 2}
+{"timestamp": "2026-10-12T23:34:12.458939", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "sqlite_query"}
+{"timestamp": "2026-10-12T23:34:12.515857", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "safe_writer"}
+{"timestamp": "2026-10-12T23:34:12.530114", "level": "INFO", "message": "Pipeline done", "app": "loom", "task_id": "0e53844f21b4499e", "pipeline": "sqlite-report", "status": "done", "duration_sec": 0.11, "error": "", "steps": 2}
+{"timestamp": "2026-10-12T23:34:14.695678", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.159490", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.303479", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.357423", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.393639", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.448793", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.485701", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.525853", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.584347", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.636020", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.687315", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.738926", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.788543", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.827502", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.871925", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.909246", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:15.945274", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:16.030934", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:16.129369", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:16.170650", "level": "INFO", "message": "注册: sqlite_query v0.1.0（entry_point:sqlite_query）", "app": "loom"}
+{"timestamp": "2026-10-12T23:34:16.171155", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "input_file": "F:\\tmp\\loom-plugin-sqlite\\examples\\input.md", "plan_id": "6c42f3b2", "total_nodes": 3}
+{"timestamp": "2026-10-12T23:34:16.201619", "level": "WARNING", "message": "Node sqlite_query 失败，0.8s 后重试 (尝试 2/3)", "app": "loom", "task_id": "ext_approve", "error": "节点 sqlite_query 未执行：幂等键 ext_approve:sqlite_query:1 已存在于消息库历史中。常见原因是复用了历史 task_id，而 bus_data/ 的幂等记录按 "}
+{"timestamp": "2026-10-12T23:34:16.996441", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "sqlite_query"}
+{"timestamp": "2026-10-12T23:34:17.009474", "level": "INFO", "message": "审批闸门等待人工放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T23:34:17.180902", "level": "INFO", "message": "审批放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T23:34:17.525258", "level": "INFO", "message": "审批闸门 release_gate 已放行", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T23:34:17.548064", "level": "WARNING", "message": "Node safe_writer 失败，0.9s 后重试 (尝试 2/3)", "app": "loom", "task_id": "ext_approve", "error": "节点 safe_writer 未执行：幂等键 ext_approve:safe_writer:1 已存在于消息库历史中。常见原因是复用了历史 task_id，而 bus_data/ 的幂等记录按 ch"}
+{"timestamp": "2026-10-12T23:34:18.472279", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "safe_writer"}
+{"timestamp": "2026-10-12T23:34:18.492348", "level": "INFO", "message": "Pipeline done", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "status": "done", "duration_sec": 2.31, "error": "", "steps": 3}
+{"timestamp": "2026-10-12T23:34:18.588354", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "ext_reject", "pipeline": "sqlite-report-approved", "input_file": "F:\\tmp\\loom-plugin-sqlite\\examples\\input.md", "plan_id": "6c42f3b2", "total_nodes": 3}
+{"timestamp": "2026-10-12T23:34:18.599873", "level": "WARNING", "message": "Node sqlite_query 失败，0.9s 后重试 (尝试 2/3)", "app": "loom", "task_id": "ext_reject", "error": "节点 sqlite_query 未执行：幂等键 ext_reject:sqlite_query:1 已存在于消息库历史中。常见原因是复用了历史 task_id，而 bus_data/ 的幂等记录按 c"}
+{"timestamp": "2026-10-12T23:34:19.522629", "level": "DEBUG", "message": "set_task_output", "app": "loom", "key": "sqlite_query"}
+{"timestamp": "2026-10-12T23:34:19.534107", "level": "INFO", "message": "审批闸门等待人工放行：['release_gate']", "app": "loom", "task_id": "ext_reject"}
+{"timestamp": "2026-10-12T23:34:19.590651", "level": "WARNING", "message": "审批驳回：['release_gate'] —— 演示驳回", "app": "loom", "task_id": "ext_reject"}
+{"timestamp": "2026-10-12T23:34:19.592519", "level": "INFO", "message": "Pipeline cancelled", "app": "loom", "task_id": "ext_reject", "pipeline": "sqlite-report-approved", "status": "cancelled", "duration_sec": 1.0, "error": "审批被驳回: 演示驳回", "steps": 1}

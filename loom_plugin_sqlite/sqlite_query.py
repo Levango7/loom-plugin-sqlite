@@ -19,7 +19,15 @@ from __future__ import annotations
 
 import sqlite3
 
-from loom_core.base_agent import AgentStatus, BaseAgent, Message
+# 宿主 import 名在 3.11.0 起由 `pipeline_core` 更名为 `loom_core`（旧名以兼容
+# shim 保留到 4.x）。外部插件在过渡期的正确姿势 = 双名兼容：
+#   - 新宿主（>=3.11.0）：走 loom_core（正式面）；
+#   - 更早宿主（3.10.x）：走 pipeline_core。
+# 两处 `base_agent` 在改名前后是**同一套公开契约**（shim 保 identity）。
+try:  # pragma: no cover - 分支取决于宿主版本
+    from loom_core.base_agent import AgentStatus, BaseAgent, Message
+except ModuleNotFoundError:  # 宿主 < 3.11.0
+    from pipeline_core.base_agent import AgentStatus, BaseAgent, Message
 
 AGENT_NAME = "sqlite_query"
 AGENT_VERSION = "0.1.0"
