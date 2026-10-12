@@ -1,0 +1,47 @@
+{
+  "id": "dbg1",
+  "pipeline": "sqlite-report-approved",
+  "input": "F:\\tmp\\loom-plugin-sqlite\\output\\_input.md",
+  "status": "done",
+  "progress": 100,
+  "awaiting_approval": null,
+  "approvals": [
+    {
+      "nodes": [
+        "release_gate"
+      ],
+      "decision": "approved",
+      "note": "dbg",
+      "reason": "",
+      "at": 1791816757.5096598,
+      "by": ""
+    }
+  ],
+  "steps": [
+    {
+      "name": "sqlite_query",
+      "agent": "sqlite_query",
+      "status": "failed",
+      "duration_ms": 3526.53,
+      "error": "Agent sqlite_query 未找到"
+    },
+    {
+      "name": "release_gate",
+      "agent": "release_gate",
+      "status": "success",
+      "duration_ms": 0.01,
+      "error": ""
+    },
+    {
+      "name": "safe_writer",
+      "agent": "safe_writer",
+      "status": "failed",
+      "duration_ms": 2492.18,
+      "error": "Agent safe_writer 未找到"
+    }
+  ],
+  "started_at": 1791816753.868086,
+  "finished_at": 1791816760.4681556,
+  "duration_sec": 6.6,
+  "error": "Agent safe_writer 未找到"
+}

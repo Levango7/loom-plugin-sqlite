@@ -1,0 +1,47 @@
+{
+  "id": "ext_approve",
+  "pipeline": "sqlite-report-approved",
+  "input": "F:\\tmp\\loom-plugin-sqlite\\output\\_input.md",
+  "status": "failed",
+  "progress": 100,
+  "awaiting_approval": null,
+  "approvals": [
+    {
+      "nodes": [
+        "release_gate"
+      ],
+      "decision": "approved",
+      "note": "口径已核对",
+      "reason": "",
+      "at": 1791816847.402124,
+      "by": "external-ci"
+    }
+  ],
+  "steps": [
+    {
+      "name": "sqlite_query",
+      "agent": "sqlite_query",
+      "status": "failed",
+      "duration_ms": 3278.32,
+      "error": "Agent sqlite_query 未找到"
+    },
+    {
+      "name": "release_gate",
+      "agent": "release_gate",
+      "status": "success",
+      "duration_ms": 0.01,
+      "error": ""
+    },
+    {
+      "name": "safe_writer",
+      "agent": "safe_writer",
+      "status": "failed",
+      "duration_ms": 2714.32,
+      "error": "内容为空"
+    }
+  ],
+  "started_at": 1791816843.9629476,
+  "finished_at": 1791816850.5349975,
+  "duration_sec": 6.57,
+  "error": "内容为空；声明了落盘节点却没有交付物（无 output_path/内容）"
+}

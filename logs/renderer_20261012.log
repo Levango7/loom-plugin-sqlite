@@ -1,0 +1,14 @@
+[2026-10-12 22:54:03] [agent.renderer] INFO: Agent renderer v1.0 初始化完成
+[2026-10-12 22:54:03] [agent.renderer] INFO: Renderer v1.0 初始化完成（格式: docx,pdf,xlsx,pptx,html，当前环境可用: docx,pdf,xlsx,pptx,html）
+[2026-10-12 22:54:07] [agent.renderer] DEBUG: Agent 快照
+[2026-10-12 22:54:07] [agent.renderer] DEBUG: Agent 快照
+[2026-10-12 22:54:07] [agent.renderer] DEBUG: Agent 快照
+[2026-10-12 22:54:10] [agent.renderer] DEBUG: Agent 快照
+[2026-10-12 22:54:11] [agent.renderer] INFO: Agent 停止
+[2026-10-12 22:58:39] [agent.renderer] INFO: Agent renderer v1.0 初始化完成
+[2026-10-12 22:58:39] [agent.renderer] INFO: Renderer v1.0 初始化完成（格式: docx,pdf,xlsx,pptx,html，当前环境可用: docx,pdf,xlsx,pptx,html）
+[2026-10-12 22:58:42] [agent.renderer] DEBUG: Agent 快照
+[2026-10-12 22:58:42] [agent.renderer] DEBUG: Agent 快照
+[2026-10-12 22:58:43] [agent.renderer] DEBUG: Agent 快照
+[2026-10-12 22:58:46] [agent.renderer] DEBUG: Agent 快照
+[2026-10-12 22:58:47] [agent.renderer] INFO: Agent 停止

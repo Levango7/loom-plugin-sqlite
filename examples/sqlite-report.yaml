@@ -1,0 +1,54 @@
+# 本地 SQLite 只读取数 → Markdown 报表落盘（loom-plugin-sqlite 演示）。
+#
+# 用法:
+#   python examples/make_sample.py            # 生成 sample.db
+#   loom run --pipeline-file examples/sqlite-report.yaml -o output/sqlite-report.md
+#
+# 宿主零改动：这条管线不依赖 Loom 仓内任何文件，sqlite_query 完全来自本插件包。
+_name: sqlite-report
+_version: "1.0"
+description: SQLite 只读查询 → Markdown 报表（外部插件示例）
+
+defaults:
+  parallelism:
+    mode: single
+    max_workers: 1
+
+agents:
+  - name: sqlite_query
+    version: "0.1.0"
+    timeout: 60
+    dependencies: []
+    config:
+      db_path: sample.db            # 只读打开；改成本地库路径即可出真报表
+      query: "SELECT order_no, customer, amount, status, note FROM orders ORDER BY amount DESC"
+      title: "订单快照"
+      max_rows: 50                  # 超出如实标注"已截断：共 N 行"
+
+  - name: safe_writer
+    version: "2.0"
+    timeout: 60
+    dependencies: ["sqlite_query"]
+    config:
+      backup_dir: backups
+      atomic: true
+
+topology:
+  type: dag
+  levels:
+    - [sqlite_query]
+    - [safe_writer]
+  edges:
+    - [sqlite_query, safe_writer]
+
+pipeline:
+  timeout: 300
+  retry:
+    max_attempts: 2
+    backoff: exponential
+    initial_delay: 1
+  checkpoint:
+    enabled: true
+    dir: checkpoints
+    keep_on_success: false
+  fail_fast: false

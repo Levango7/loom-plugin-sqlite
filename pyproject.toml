@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loom-plugin-sqlite"
+version = "0.1.0"
+description = "Loom 外部插件：只读 SQLite 取数 Agent（loom.agents entry_points 接入，宿主零改动）"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Levango7"}]
+keywords = ["loom", "nexusloom", "agent", "sqlite", "workflow"]
+dependencies = ["nexusloom>=3.10.0"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+# 接入契约：group = loom.agents；值是**模块路径**（与内置 agents/*.py 同构：
+# 模块级 AGENT_NAME + BaseAgent 子类）。
+# 旧 group 名 doc_pipeline.agents 在宿主过渡期仍被发现，但新包一律用新名。
+[project.entry-points."loom.agents"]
+sqlite_query = "loom_plugin_sqlite.sqlite_query"
+
+[project.urls]
+Homepage = "https://github.com/Levango7/loom-plugin-sqlite"
+
+[tool.setuptools]
+packages = ["loom_plugin_sqlite"]

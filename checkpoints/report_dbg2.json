@@ -1,0 +1,47 @@
+{
+  "id": "dbg2",
+  "pipeline": "sqlite-report-approved",
+  "input": "F:\\tmp\\loom-plugin-sqlite\\output\\_input.md",
+  "status": "failed",
+  "progress": 100,
+  "awaiting_approval": null,
+  "approvals": [
+    {
+      "nodes": [
+        "release_gate"
+      ],
+      "decision": "approved",
+      "note": "dbg",
+      "reason": "",
+      "at": 1791817123.025821,
+      "by": ""
+    }
+  ],
+  "steps": [
+    {
+      "name": "sqlite_query",
+      "agent": "sqlite_query",
+      "status": "failed",
+      "duration_ms": 3353.5,
+      "error": "Agent sqlite_query 未找到"
+    },
+    {
+      "name": "release_gate",
+      "agent": "release_gate",
+      "status": "success",
+      "duration_ms": 0.01,
+      "error": ""
+    },
+    {
+      "name": "safe_writer",
+      "agent": "safe_writer",
+      "status": "failed",
+      "duration_ms": 3170.15,
+      "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。"
+    }
+  ],
+  "started_at": 1791817119.579258,
+  "finished_at": 1791817126.6950066,
+  "duration_sec": 7.12,
+  "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。；声明了落盘节点却没有交付物（无 output_path/内容）"
+}

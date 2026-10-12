@@ -1,0 +1,220 @@
+{
+  "id": "dbg2",
+  "pipeline": "sqlite-report-approved",
+  "input": "F:\\tmp\\loom-plugin-sqlite\\output\\_input.md",
+  "status": "running",
+  "progress": 100,
+  "awaiting_approval": null,
+  "approvals": [
+    {
+      "nodes": [
+        "release_gate"
+      ],
+      "decision": "approved",
+      "note": "dbg",
+      "reason": "",
+      "at": 1791817123.025821,
+      "by": ""
+    }
+  ],
+  "steps": [
+    {
+      "name": "sqlite_query",
+      "agent": "sqlite_query",
+      "status": "failed",
+      "duration_ms": 3353.5,
+      "error": "Agent sqlite_query 未找到"
+    },
+    {
+      "name": "release_gate",
+      "agent": "release_gate",
+      "status": "success",
+      "duration_ms": 0.01,
+      "error": ""
+    },
+    {
+      "name": "safe_writer",
+      "agent": "safe_writer",
+      "status": "failed",
+      "duration_ms": 3170.15,
+      "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。"
+    }
+  ],
+  "started_at": 1791817119.579258,
+  "finished_at": 0,
+  "duration_sec": null,
+  "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。",
+  "_result": {},
+  "_steps": [
+    {
+      "step_name": "sqlite_query",
+      "agent_name": "sqlite_query",
+      "status": "failed",
+      "started_at": 1791817119.6197858,
+      "finished_at": 1791817122.9732857,
+      "error": "Agent sqlite_query 未找到"
+    },
+    {
+      "step_name": "release_gate",
+      "agent_name": "release_gate",
+      "status": "success",
+      "started_at": 1791817123.5057735,
+      "finished_at": 1791817123.5057826,
+      "error": ""
+    },
+    {
+      "step_name": "safe_writer",
+      "agent_name": "safe_writer",
+      "status": "failed",
+      "started_at": 1791817123.5138712,
+      "finished_at": 1791817126.6840174,
+      "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。"
+    }
+  ],
+  "_dag_nodes": {
+    "sqlite_query": {
+      "status": "failed",
+      "error": "Agent sqlite_query 未找到",
+      "attempts": 3,
+      "started_at": 1791817119.6197853,
+      "finished_at": 1791817122.973265,
+      "result": {}
+    },
+    "release_gate": {
+      "status": "success",
+      "error": "",
+      "attempts": 0,
+      "started_at": 0,
+      "finished_at": 1791817123.5057428,
+      "result": {
+        "status": "approved",
+        "approval": {
+          "message": "确认数据口径后放行出具"
+        },
+        "note": "dbg"
+      }
+    },
+    "safe_writer": {
+      "status": "failed",
+      "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。",
+      "attempts": 3,
+      "started_at": 1791817123.51387,
+      "finished_at": 1791817126.6840086,
+      "result": {}
+    }
+  },
+  "agent_snapshots": {
+    "fact_coverage": {
+      "name": "fact_coverage",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "fetcher": {
+      "name": "fetcher",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "http_request": {
+      "name": "http_request",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "ingest": {
+      "output_dir": "output/ingested",
+      "ocr_enabled": true
+    },
+    "keyword_extract": {
+      "name": "keyword_extract",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "knowledge_base": {
+      "db_path": "knowledge_base.db",
+      "embedder": "auto",
+      "dim": null,
+      "default_top_k": 5
+    },
+    "link_check": {
+      "name": "link_check",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "readability": {
+      "name": "readability",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "renderer": {
+      "name": "renderer",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "requirements_analyzer": {
+      "name": "requirements_analyzer",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "researcher": {
+      "name": "researcher",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "safe_writer": {
+      "name": "safe_writer",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "tldr": {
+      "name": "tldr",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "transform": {
+      "name": "transform",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "checker": {
+      "name": "checker",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "fact_checker": {
+      "name": "fact_checker",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "layout": {
+      "name": "layout",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "quality_gate": {
+      "name": "quality_gate",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    },
+    "writer": {
+      "name": "writer",
+      "status": "loaded",
+      "success_count": 0,
+      "error_count": 0
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{"timestamp": "2026-10-12T22:50:06.977133", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "input_file": "F:\\tmp\\loom-plugin-sqlite\\output\\_input.md", "plan_id": "26a87f1e", "total_nodes": 3}
+{"timestamp": "2026-10-12T22:50:07.042301", "level": "WARNING", "message": "Node sqlite_query 失败，1.1s 后重试 (尝试 2/3)", "app": "loom", "task_id": "ext_approve", "error": "节点 sqlite_query 业务失败: Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:50:08.143329", "level": "WARNING", "message": "Node sqlite_query 失败，2.4s 后重试 (尝试 3/3)", "app": "loom", "task_id": "ext_approve", "error": "Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:50:10.605087", "level": "INFO", "message": "审批闸门等待人工放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T22:50:10.648240", "level": "INFO", "message": "审批放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T22:50:11.120711", "level": "INFO", "message": "审批闸门 release_gate 已放行", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T22:50:11.126808", "level": "WARNING", "message": "Node safe_writer 失败，0.8s 后重试 (尝试 2/3)", "app": "loom", "task_id": "ext_approve", "error": "节点 safe_writer 业务失败: Agent safe_writer 未找到"}
+{"timestamp": "2026-10-12T22:50:11.963609", "level": "WARNING", "message": "Node safe_writer 失败，1.5s 后重试 (尝试 3/3)", "app": "loom", "task_id": "ext_approve", "error": "Agent safe_writer 未找到"}
+{"timestamp": "2026-10-12T22:50:13.477941", "level": "INFO", "message": "Pipeline done", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "status": "done", "duration_sec": 6.49, "error": "Agent safe_writer 未找到", "steps": 3}
+{"timestamp": "2026-10-12T22:51:19.966707", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "input_file": "F:\\tmp\\loom-plugin-sqlite\\output\\_input.md", "plan_id": "ebfa7b83", "total_nodes": 3}
+{"timestamp": "2026-10-12T22:51:20.003401", "level": "WARNING", "message": "Node sqlite_query 失败，1.1s 后重试 (尝试 2/3)", "app": "loom", "task_id": "ext_approve", "error": "节点 sqlite_query 业务失败: Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:51:21.111062", "level": "WARNING", "message": "Node sqlite_query 失败，2.5s 后重试 (尝试 3/3)", "app": "loom", "task_id": "ext_approve", "error": "Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:51:23.611617", "level": "INFO", "message": "审批闸门等待人工放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T22:51:23.807692", "level": "INFO", "message": "审批放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T22:51:24.124590", "level": "INFO", "message": "审批闸门 release_gate 已放行", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T22:51:24.131038", "level": "WARNING", "message": "Node safe_writer 失败，1.2s 后重试 (尝试 2/3)", "app": "loom", "task_id": "ext_approve", "error": "节点 safe_writer 业务失败: Agent safe_writer 未找到"}
+{"timestamp": "2026-10-12T22:51:25.382545", "level": "WARNING", "message": "Node safe_writer 失败，2.5s 后重试 (尝试 3/3)", "app": "loom", "task_id": "ext_approve", "error": "Agent safe_writer 未找到"}
+{"timestamp": "2026-10-12T22:51:27.915349", "level": "INFO", "message": "Pipeline done", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "status": "done", "duration_sec": 7.94, "error": "Agent safe_writer 未找到", "steps": 3}
+{"timestamp": "2026-10-12T22:52:33.868128", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "dbg1", "pipeline": "sqlite-report-approved", "input_file": "F:\\tmp\\loom-plugin-sqlite\\output\\_input.md", "plan_id": "493a3e52", "total_nodes": 3}
+{"timestamp": "2026-10-12T22:52:33.904135", "level": "WARNING", "message": "Node sqlite_query 失败，1.1s 后重试 (尝试 2/3)", "app": "loom", "task_id": "dbg1", "error": "节点 sqlite_query 业务失败: Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:52:35.012666", "level": "WARNING", "message": "Node sqlite_query 失败，2.4s 后重试 (尝试 3/3)", "app": "loom", "task_id": "dbg1", "error": "Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:52:37.448566", "level": "INFO", "message": "审批闸门等待人工放行：['release_gate']", "app": "loom", "task_id": "dbg1"}
+{"timestamp": "2026-10-12T22:52:37.509675", "level": "INFO", "message": "审批放行：['release_gate']", "app": "loom", "task_id": "dbg1"}
+{"timestamp": "2026-10-12T22:52:37.960854", "level": "INFO", "message": "审批闸门 release_gate 已放行", "app": "loom", "task_id": "dbg1"}
+{"timestamp": "2026-10-12T22:52:37.968315", "level": "WARNING", "message": "Node safe_writer 失败，0.8s 后重试 (尝试 2/3)", "app": "loom", "task_id": "dbg1", "error": "节点 safe_writer 业务失败: Agent safe_writer 未找到"}
+{"timestamp": "2026-10-12T22:52:38.767418", "level": "WARNING", "message": "Node safe_writer 失败，1.7s 后重试 (尝试 3/3)", "app": "loom", "task_id": "dbg1", "error": "Agent safe_writer 未找到"}
+{"timestamp": "2026-10-12T22:52:40.484315", "level": "INFO", "message": "Pipeline done", "app": "loom", "task_id": "dbg1", "pipeline": "sqlite-report-approved", "status": "done", "duration_sec": 6.6, "error": "Agent safe_writer 未找到", "steps": 3}
+{"timestamp": "2026-10-12T22:54:00.964948", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:01.580545", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:01.881144", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:02.108654", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:02.148995", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:02.197574", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:02.240640", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:02.282168", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.429558", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.491632", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.550399", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.585716", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.628350", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.691018", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.724175", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.760270", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.795857", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.871644", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.962588", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:54:03.962966", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "input_file": "F:\\tmp\\loom-plugin-sqlite\\output\\_input.md", "plan_id": "5f5b032d", "total_nodes": 3}
+{"timestamp": "2026-10-12T22:54:03.996880", "level": "WARNING", "message": "Node sqlite_query 失败，1.2s 后重试 (尝试 2/3)", "app": "loom", "task_id": "ext_approve", "error": "节点 sqlite_query 业务失败: Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:54:05.190727", "level": "WARNING", "message": "Node sqlite_query 失败，2.1s 后重试 (尝试 3/3)", "app": "loom", "task_id": "ext_approve", "error": "Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:54:07.293874", "level": "INFO", "message": "审批闸门等待人工放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T22:54:07.402132", "level": "INFO", "message": "审批放行：['release_gate']", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T22:54:07.801997", "level": "INFO", "message": "审批闸门 release_gate 已放行", "app": "loom", "task_id": "ext_approve"}
+{"timestamp": "2026-10-12T22:54:07.822810", "level": "WARNING", "message": "Node safe_writer 失败，1.0s 后重试 (尝试 2/3)", "app": "loom", "task_id": "ext_approve", "error": "节点 safe_writer 业务失败: 内容为空"}
+{"timestamp": "2026-10-12T22:54:08.859958", "level": "WARNING", "message": "Node safe_writer 失败，1.7s 后重试 (尝试 3/3)", "app": "loom", "task_id": "ext_approve", "error": "内容为空"}
+{"timestamp": "2026-10-12T22:54:10.534965", "level": "ERROR", "message": "交付契约未满足：没有交付物，不能算 done", "app": "loom", "task_id": "ext_approve", "error": "内容为空；声明了落盘节点却没有交付物（无 output_path/内容）"}
+{"timestamp": "2026-10-12T22:54:10.542910", "level": "INFO", "message": "Pipeline failed", "app": "loom", "task_id": "ext_approve", "pipeline": "sqlite-report-approved", "status": "failed", "duration_sec": 6.57, "error": "内容为空；声明了落盘节点却没有交付物（无 output_path/内容）", "steps": 3}
+{"timestamp": "2026-10-12T22:58:36.676534", "level": "INFO", "message": "注册: fact_coverage v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:37.191698", "level": "INFO", "message": "注册: fetcher v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:37.513681", "level": "INFO", "message": "注册: http_request v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:37.726559", "level": "INFO", "message": "注册: ingest v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:37.758967", "level": "INFO", "message": "注册: keyword_extract v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:37.797897", "level": "INFO", "message": "注册: knowledge_base v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:37.829976", "level": "INFO", "message": "注册: link_check v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:37.860761", "level": "INFO", "message": "注册: readability v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.112588", "level": "INFO", "message": "注册: renderer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.162658", "level": "INFO", "message": "注册: requirements_analyzer v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.208143", "level": "INFO", "message": "注册: researcher v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.239125", "level": "INFO", "message": "注册: safe_writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.272118", "level": "INFO", "message": "注册: tldr v0.1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.310643", "level": "INFO", "message": "注册: transform v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.362249", "level": "INFO", "message": "注册: checker v1.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.394434", "level": "INFO", "message": "注册: fact_checker v1.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.425791", "level": "INFO", "message": "注册: layout v3.1（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.498779", "level": "INFO", "message": "注册: quality_gate v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.570995", "level": "INFO", "message": "注册: writer v2.0（builtin）", "app": "loom"}
+{"timestamp": "2026-10-12T22:58:39.579288", "level": "INFO", "message": "Pipeline started", "app": "loom", "task_id": "dbg2", "pipeline": "sqlite-report-approved", "input_file": "F:\\tmp\\loom-plugin-sqlite\\output\\_input.md", "plan_id": "9b44d3f0", "total_nodes": 3}
+{"timestamp": "2026-10-12T22:58:39.620252", "level": "WARNING", "message": "Node sqlite_query 失败，0.8s 后重试 (尝试 2/3)", "app": "loom", "task_id": "dbg2", "error": "节点 sqlite_query 业务失败: Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:58:40.442740", "level": "WARNING", "message": "Node sqlite_query 失败，2.5s 后重试 (尝试 3/3)", "app": "loom", "task_id": "dbg2", "error": "Agent sqlite_query 未找到"}
+{"timestamp": "2026-10-12T22:58:42.993388", "level": "INFO", "message": "审批闸门等待人工放行：['release_gate']", "app": "loom", "task_id": "dbg2"}
+{"timestamp": "2026-10-12T22:58:43.025849", "level": "INFO", "message": "审批放行：['release_gate']", "app": "loom", "task_id": "dbg2"}
+{"timestamp": "2026-10-12T22:58:43.505750", "level": "INFO", "message": "审批闸门 release_gate 已放行", "app": "loom", "task_id": "dbg2"}
+{"timestamp": "2026-10-12T22:58:43.514652", "level": "WARNING", "message": "Node safe_writer 失败，1.3s 后重试 (尝试 2/3)", "app": "loom", "task_id": "dbg2", "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点"}
+{"timestamp": "2026-10-12T22:58:44.799547", "level": "WARNING", "message": "Node safe_writer 失败，1.9s 后重试 (尝试 3/3)", "app": "loom", "task_id": "dbg2", "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点"}
+{"timestamp": "2026-10-12T22:58:46.694968", "level": "ERROR", "message": "交付契约未满足：没有交付物，不能算 done", "app": "loom", "task_id": "dbg2", "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。；声明了落盘节点却没有交付物（无 output_path/内容）"}
+{"timestamp": "2026-10-12T22:58:46.714108", "level": "INFO", "message": "Pipeline failed", "app": "loom", "task_id": "dbg2", "pipeline": "sqlite-report-approved", "status": "failed", "duration_sec": 7.12, "error": "输入文件 'F:\\\\tmp\\\\loom-plugin-sqlite\\\\output\\\\_input.md' 未提取到任何有效检索词（空文件/全部为注释或过短行）。请在输入文件首行写明文档主题，或为节点配置 default_query。；声明了落盘节点却没有交付物（无 output_path/内容）", "steps": 3}

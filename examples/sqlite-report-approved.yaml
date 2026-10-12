@@ -1,0 +1,46 @@
+# 与 sqlite-report.yaml 相同，但在取数与落盘之间插入**人工审批闸门**：
+# 出数前必须有人放行（POST /tasks/<id>/approve）或驳回（reject → 终止）。
+#
+# 用法:
+#   python examples/make_sample.py
+#   loom run --pipeline-file examples/sqlite-report-approved.yaml -o output/report.md &
+#   # 任务会停在 paused（awaiting_approval）：
+#   curl -X POST "http://127.0.0.1:8910/tasks/<id>/approve" -d '{"note": "口径已核对"}'
+name: sqlite-report-approved
+agents:
+  - name: sqlite_query
+    version: "0.1.0"
+    timeout: 60
+    dependencies: []
+    config:
+      db_path: sample.db
+      query: "SELECT order_no, customer, amount, status FROM orders ORDER BY amount DESC"
+      title: "订单快照（审批版）"
+      max_rows: 50
+
+  - name: release_gate
+    approval:
+      message: "确认数据口径后放行出具"
+    dependencies: ["sqlite_query"]
+
+  - name: safe_writer
+    version: "2.0"
+    timeout: 60
+    dependencies: ["release_gate"]
+    config:
+      backup_dir: backups
+      atomic: true
+
+topology:
+  type: dag
+  levels:
+    - [sqlite_query]
+    - [release_gate]
+    - [safe_writer]
+  edges:
+    - [sqlite_query, release_gate]
+    - [release_gate, safe_writer]
+
+pipeline:
+  timeout: 300
+  fail_fast: false

@@ -1,0 +1,14 @@
+[2026-10-12 22:54:01] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 22:54:01] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\loom_fetcher | Async I/O: 启用 | HTML解析: modest | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 22:54:07] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 22:54:07] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 22:54:07] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 22:54:10] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 22:54:11] [agent.fetcher] INFO: Agent 停止
+[2026-10-12 22:58:37] [agent.fetcher] INFO: Agent fetcher v1.0 初始化完成
+[2026-10-12 22:58:37] [agent.fetcher] INFO: Fetcher v1.0 初始化完成，临时目录: C:\Users\winge\AppData\Local\Temp\loom_fetcher | Async I/O: 启用 | HTML解析: modest | Firecrawl: 未配置 | UA池: 4 | 重试: 2
+[2026-10-12 22:58:42] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 22:58:42] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 22:58:43] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 22:58:46] [agent.fetcher] DEBUG: Agent 快照
+[2026-10-12 22:58:47] [agent.fetcher] INFO: Agent 停止
